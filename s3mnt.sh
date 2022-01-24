@@ -1,0 +1,2 @@
+#!/bin/bash
+s3fs /mnt/sgdemobucket -o host="http://dc1-g1.demo.netapp.com:8084" --debug -o bucket="sgdemobucket" -o ssl_verify_hostname=0 -o no_check_certificate -o logfile="/root/s3fslog" -o dbglevel=info -o use_path_request_style
